@@ -2,9 +2,9 @@ terraform {
   required_version = "~> 1.0"
   cloud {
     hostname     = "app.terraform.io"
-    organization = "davinci"
+    organization = "windmaker"
     workspaces {
-      name = "aws-python-lambda-layer"
+      name = "my-first-lambda"
     }
   }
   required_providers {
@@ -23,8 +23,8 @@ provider "aws" {
   skip_metadata_api_check = true
   default_tags {
     tags = {
-      GitHubRepo = "aws-python-lambda-layer"
-      Workspace  = "aws-python-lambda-layer"
+      GitHubRepo = "my-first-lambda"
+      Workspace  = "my-first-lambda"
     }
   }
 }
