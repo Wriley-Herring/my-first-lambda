@@ -1,7 +1,7 @@
 variable "account_id" {
   type        = number
   description = "AWS Account ID"
-  default     = 288195736164
+  default     = 583937632218
 }
 
 variable "access_key" {
