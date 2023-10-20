@@ -104,7 +104,7 @@ jobs:
   #       run: terraform destroy -var access_key=test -var secret_key=test -auto-approve
 
   plan-infra:
-    needs: []
+    needs: [create-lambda-layer-zip]
     name: Plan Infrastructure w/ Terraform
     runs-on: ubuntu-20.04
     permissions:
